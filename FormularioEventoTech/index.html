@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evento Tech 2024</title>
+</head>
+
+<body>
+    <section class="section-form">
+
+        <div class="div-Form">
+
+            <form class="frmfaleconosco" name="frmfaleconosco" method="post" action="/pages/fale_conosco.html"
+                onsubmit="return validaFaleConosco()">
+                <h2 class="titulo-Form">Inscrição para Evento Tech 2024</h2>
+                <p class="sub-titulo-Form">Complete o Formulario abaixo para se inscrever no evento</p>
+                <fieldset class="campo dados">
+                    <legend class="tituloFieldset">Informações pessoais:</legend>
+                    <input class="item-input-form" type="text" name="nometxt" id="nome" placeholder="Nome:" required>
+                    <input class="item-input-form" type="email" name="emailtxt" id="email" placeholder="Email" required>
+                    <input class="item-input-form" type="password" name="senhatxt" id="senha" placeholder="Senha"
+                        required>
+                    <input class="item-input-form" type="number" name="idadetxt" id="idade" placeholder="Idade"
+                        required>
+                    <div class="data-nasc">
+                        <label class="legenda-input" for="date">Data de nascimento: </label>
+                        <input class="item-input-form" type="date" name="datatxt" id="date" required>
+                    </div>
+                </fieldset>
+                <fieldset class="campo pref">
+                    <legend class="tituloFieldset">Preferencias do evento</legend>
+                    <div class="data-nasc">
+                        <label class="legenda-input" for="tema-interesse">Tema de Interesse:</label>
+                        <select class="item-input-form" name="tema-interesse" id="tema-interesse" required>
+                            <option class="input-check" value="">Selecione Um tema de Interesse</option>
+                            <option class="input-check" value="FE">Front-End</option>
+                            <option class="input-check" value="BE">Back-End</option>
+                            <option class="input-check" value="FS">Full-Stack</option>
+                            <option class="input-check" value="CD">Ciencia de Dados</option>
+                        </select>
+                    </div>
+                    <legend class="tituloFieldset">Workshops</legend>
+                    <div id="work-section" class="Workshops-sec">
+                        <input class="input-check" id="dev-web" type="checkbox">
+                        <label class="legenda-input-w" for="dev-web">Desenvolvimento Web Moderno</label>
+                        <input class="input-check" id="ia" type="checkbox">
+                        <label class="legenda-input-w" for="ia">Introdução a inteligencia artificial</label>
+                        <input class="input-check" id="intern-sec" type="checkbox">
+                        <label class="legenda-input-w" for="intern-sec">Segurança na Internet</label>
+                    </div>
+                </fieldset>
+                <fieldset class="campo apresent">
+                    <legend class="tituloFieldset">Submissão de apresentação</legend>
+                    <div class="data-nasc">
+
+                        <label class="legenda-input" for="titulo_submissao">Titulo</label>
+                        <input class="item-input-form" type="text" id="titulo_submissao">
+                    </div>
+                    <div class="data-nasc">
+
+                        <label class="legenda-input" for="comentario">Comentário: </label>
+                        <textarea class="comentarios" name="txacomentario" id="comentario"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="item-input-form-anex">
+                    <input class="arqv-pdf" type="file" name="" id="anex-pdf">
+                </fieldset>
+                <fieldset class="campo buttons">
+                    <button class="btn-form btn-reset" type="reset">Limpar</button>
+                    <button class="btn-form btn-submit" type="submit">Enviar</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
