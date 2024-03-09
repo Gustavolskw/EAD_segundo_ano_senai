@@ -1,0 +1,32 @@
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+    color: #54afd3;
+}
+
+.conteudo-prin {
+    text-align: center;
+    margin: 10px;
+    width: 80%;
+}
+
+.principal-texto {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.curso-titulo {
+    color: #35b84b;
+    text-decoration: underline #54afd3;
+    font-size: 1.2rem;
+}

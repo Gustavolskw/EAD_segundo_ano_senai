@@ -1,0 +1,19 @@
+.section-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    margin: 3rem;
+    width: 75%;
+}
+
+.titulo-sobre {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.texto-sobre {
+    font-size: 1.5rem;
+}
