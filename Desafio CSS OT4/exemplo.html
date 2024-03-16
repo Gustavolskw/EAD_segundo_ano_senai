@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Exemplos Layout</title>
+    <style>
+        /* Organizando todo o site em caixa */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Ajustes em todo site */
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Ajustes no cabeçalho principal */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        /* Ajustando o tamanho do cabeçalho */
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Ajustando a cor e escondendo o conteúdo excedido */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Ajuste nos LINKS do Menu principal */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Mude a cor ou passar o mouse */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Rodapé */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Transformando em um Layout responsivo - telas medias */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Transformando em um Layout responsivo - telas menores */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Meu Template de Site</h1>
+        <p>Uma breve descrição do meu template</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Principal</a>
+        <a href="#">Blog</a>
+        <a href="#">Sobre</a>
+        <a href="#" style="float:right">Login</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Titulo da informação principal</h2>
+                <h5>Uma breve descrição da noticia ou informação, Algum lugar 30/09/2018.</h5>
+                <div class="fakeimg" style="height:200px;">Imagem</div>
+                <p>Um breve resumo ...</p>
+                <p>Mais algumas informações sobre o que você quer falar.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Sobre</h2>
+                <div class="fakeimg" style="height:100px;">Imagem</div>
+                <p>Em breve resumo da sua vida.</p>
+            </div>
+            <div class="card">
+                <h3>Informações principais</h3>
+                <div class="fakeimg">
+                    <p>Imagem</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Imagem</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Imagem</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Siga-me</h3>
+                <p>Adicione suas redes sociais favoritas</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Rodapé</h2>
+    </div>
+</body>
+
+</html>
