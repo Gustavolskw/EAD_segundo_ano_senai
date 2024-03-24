@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3a3737;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.container:hover {
+    box-shadow: 0 6px 15px #0907aa;
+}
+
+.profile-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #292828;
+    color: white;
+
+}
+
+.profile-image {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: solid 0.3rem #2623b8;
+
+}
+
+.profile-image:hover {
+    box-shadow: 0 4px 12px #2623b8
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.link {
+    background-color: #2623b8;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #3b3aa3;
+    transition: background-image 0.5s;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.link:hover {
+    background-image: linear-gradient(144deg, #001aff, #0c0a91 70%, #001aff);
+}
+
+.linke:hover {
+    background-image: linear-gradient(144deg, #587ee7, #0307ff 50%, #587ee7);
+}
+
+.gthub:hover {
+    background-image: linear-gradient(144deg, #8c00ff 50%, #f266ff);
+}
+
+.ig:hover {
+    background-image: linear-gradient(144deg, #c500b5 50%, #8433c7);
+}
+
+.link:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(123, 122, 124);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(165, 161, 161);
+    border-radius: 10px;
+    box-shadow: 0 1rem 5rem rgb(0, 0, 0);
+    padding: 20px;
+    margin: 4rem auto;
+    max-width: 600px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.profile-image:hover {
+    cursor: pointer;
+    width: 203px;
+    height: 203px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 0.3rem 2rem #cc1ccc;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 2rem;
+}
+
+.link {
+    text-shadow: 0 0.1rem 0.3rem #1551c2;
+}
+
+.gthub {
+    text-shadow: 0 0.1rem 0.3rem #8433c7;
+}
+
+.twt {
+    text-shadow: 0 0.1rem 0.3rem black;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+
+.button:hover {
+    color: #fff;
+    border: none;
+}
+
+.button-twt:hover {
+    box-shadow: 1px 1px 1rem black;
+    background-image: linear-gradient(144deg, #E1E7E4, black);
+}
+
+.button-gthub:hover {
+    box-shadow: 1px 1px 1rem #8433c7;
+    background-image: linear-gradient(144deg, #E1E7E4, #8433c7 70%, #E1E7E4);
+}
+
+.button-link:hover {
+    box-shadow: 1px 1px 1rem #1551c2;
+    background-image: linear-gradient(144deg, #E1E7E4, #1551c2 70%, #E1E7E4);
+}
