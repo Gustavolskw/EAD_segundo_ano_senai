@@ -1,0 +1,180 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Camada escura para melhor contraste */
+}
+
+.login-form {
+    position: relative;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    /* Garante que o formulário fique acima do pseudo-elemento ::before */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Garante que padding não aumente o tamanho do input */
+}
+
+
+
+/*Editado*/
+
+.text-header {
+    text-align: center;
+    color: white;
+}
+
+.container-headertext {
+    margin: 2rem 2rem;
+    padding: 1rem;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 9px;
+}
+
+.typewriter {
+    font-size: 24px;
+    overflow: hidden;
+    /* Garante que o conteúdo extra seja ocultado */
+    border-right: .15em solid white;
+    /* Simula o cursor da máquina de escrever */
+    white-space: nowrap;
+    /* Impede a quebra de linha */
+    margin: 0 auto;
+    /* Centraliza o texto */
+    animation: typing 3.5s steps(60, end), blink-caret .75s step-end infinite;
+}
+
+/* Animação que simula a digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Animação que simula o piscar do cursor */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.animated-text {
+    font-size: 24px;
+    color: #000;
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #000;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: #000;
+    }
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #007BFF;
+}
+
+
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form {
+    border: 5px solid;
+    border-color: black;
+    animation: borderChange 5s infinite;
+
+}
+
+@keyframes borderChange {
+    0% {
+        border-color: #9edddf;
+    }
+
+    20% {
+        border-color: #4fc2c5;
+    }
+
+
+
+    40% {
+        border-color: #01767d;
+    }
+
+    80% {
+        border-color: #52a8ac;
+    }
+
+    100% {
+        border-color: #dfe0e4;
+    }
+}
