@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.introducao {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.links-uteis {
+    list-style: none;
+}
+
+.links-uteis li {
+    margin-bottom: 10px;
+}
+
+.links-uteis a:link,
+.links-uteis a:visited {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.links-uteis a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 7rem;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    bottom: 1;
+}
+
+/*Parte editada por Gustavolskw*/
+
+.card_section {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem
+}
+
+.card {
+    width: 20rem;
+    border-radius: 9px;
+    padding: 1rem 0.5rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card>h3 {
+    text-align: center;
+}
