@@ -1,0 +1,47 @@
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-prin {
+    margin: 10px;
+    width: 60%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.principal-texto {
+    text-align: center;
+}
+
+.img-logo {
+    position: relative;
+    padding-top: 2rem;
+    width: 5rem
+}
+
+.projetos-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+.lista-texto {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.lista-texto:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.img-project {
+    width: 1.5rem
+}

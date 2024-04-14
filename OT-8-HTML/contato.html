@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Portfólio de [Seu Nome]</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="/css/contato.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="section-form">
+            <form class="form-contato" action="destino_do_formulario.php" method="POST">
+                <fieldset class="campos-form">
+                    <legend class="titulo-campo">Formulario de Contato</legend>
+                    <div class="container">
+                        <div class="container-item">
+                            <label class="label-form" for="nome">Nome:</label>
+                            <input class="input-form" type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="container-item">
+                            <label class="label-form" for="email">E-mail:</label>
+                            <input class="input-form" type="text" id="email">
+                        </div>
+                        <div class="container-item">
+                            <label class="label-form" for="telefone">Telefone:</label>
+                            <input class="input-form" type="tel" id="telefone" name="telefone" required>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="radio-container">
+                            <label class="label-form">Sexo:</label>
+                            <br>
+                            <input class="input-form-radio" type="radio" id="masculino" name="sexo" value="masculino">
+                            <label class="label-form-radio" for="masculino">Masculino</label>
+                            <input class="input-form-radio" type="radio" id="feminino" name="sexo" value="feminino">
+                            <label class="label-form-radio" for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <label class="label-form" for="comentario">Comentário:</label>
+                        <textarea class="comentarios" id="comentario" name="comentario"></textarea>
+                    </div>
+                    <div class="container">
+                        <button class="btn-send" type="submit">OK</button>
+                    </div>
+                </fieldset>
+
+
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="/js/site.js"></script>
+
+</html>

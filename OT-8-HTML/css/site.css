@@ -1,0 +1,46 @@
+body {
+    margin: 0 auto;
+    font-family: "Century Gothic", sans-serif;
+    background-color: rgb(233, 233, 233);
+    height: 100vh;
+}
+
+header {
+    margin: 0 auto;
+    background: linear-gradient(#35b84b, #54afd3);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.Titulo-header {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.header-list-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.list-item-text {
+    color: white;
+    text-decoration: none;
+}
+
+.list-item-text:hover {
+    color: blue
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #54afd3;
+}

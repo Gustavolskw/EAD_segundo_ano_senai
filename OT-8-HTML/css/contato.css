@@ -1,0 +1,73 @@
+.section-form {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-contato {
+    width: 60%;
+}
+
+.titulo-campo {
+    text-align: center;
+    color: #54afd3;
+}
+
+
+.campos-form {
+    border-radius: 45px;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.label-form {
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-form {
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 20px;
+    padding: 0.2rem;
+}
+
+.radio-container {
+    text-align: center;
+}
+
+.comentarios {
+    height: 100px;
+    width: 60%;
+    resize: none;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.btn-send {
+    cursor: pointer;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #54afd3;
+}
+
+.btn-send:hover {
+    background-color: #35b84b;
+}
