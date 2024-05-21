@@ -1,0 +1,78 @@
+body {
+    display: grid;
+    grid-template-columns: 0fr 8fr;
+    /* Duas colunas: 1 parte com 1x a largura da outra */
+    gap: 20px;
+}
+
+
+.cards {
+    align-self: center;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Colunas de produtos */
+    gap: 10px;
+}
+
+.prdt {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Animação de hover */
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.prdt:hover {
+    transform: translateY(-5px);
+    /* Elevação no hover */
+}
+
+.btn-compra {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+header {
+    grid-column: 1 / 3;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-column: 1 / 3;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout responsivo para telas menores */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        /* Uma única coluna para telas menores */
+    }
+
+    header,
+    nav,
+    .cards,
+    footer {
+        grid-column: 1;
+        /* Todos os elementos ocupam a mesma coluna */
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        /* Uma coluna de produtos para telas menores */
+    }
+}
