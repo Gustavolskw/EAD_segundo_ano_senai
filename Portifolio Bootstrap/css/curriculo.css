@@ -1,0 +1,15 @@
+.titulo-principal {
+    color: #54afd3;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.curso-titulo {
+    color: #35b84b;
+    text-decoration: underline #54afd3;
+}

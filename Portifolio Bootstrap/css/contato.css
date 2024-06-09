@@ -1,0 +1,22 @@
+.titulo-campo {
+    color: #54afd3;
+}
+
+
+
+
+.radio-container {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-send {
+    background-color: #54afd3;
+}
+
+.btn-send:hover {
+    background-color: #35b84b;
+}
