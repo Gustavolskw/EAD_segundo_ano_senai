@@ -1,0 +1,16 @@
+body {
+    font-family: "Century Gothic", sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+header {
+    background: linear-gradient(#35b84b, #54afd3);
+}
+
+.list-item-text:hover {
+    color: blue
+}
+
+footer {
+    background-color: #54afd3;
+}
